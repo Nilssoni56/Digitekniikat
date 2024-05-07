@@ -33,27 +33,11 @@ body {
   line-height: 0px;  /* TÄSSÄ ON GÄPIN POISTO */
 }
 
-#p1 {
-  text-align: center;
-}
-
-
 /* FONTIT TEXTEIHIN */
 #p1 {
   text-align: center;
   font-family: Inclusive Sans;
-}
-
-#paikka1 {
-  font-family: Inclusive Sans;
-}
-
-#koe1 {
-  font-family: Inclusive Sans;
-}
-
-#paikka2 {
-  font-family:Inclusive Sans ;
+  margin: 40px 40px;
 }
 
 /*Tyyliasetukset kartalle*/
