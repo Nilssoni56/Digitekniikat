@@ -92,12 +92,61 @@
 <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.068431058602!2d24.959430776951507!3d60.19671664129126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099d6fb3622b%3A0xb9dfffae187457de!2sPub%20Paavali!5e0!3m2!1sfi!2sfi!4v1713262232621!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
  
 <footer id="footer">
-  <script>
-    document.getElementById('footer').innerHTML = new Date().getHours() >= 12 ? 'Hyvää iltapäivää' : 'Hyvää huomenta';
+ <script>
+    // Define an array of phrases
+    const phrases = [
+         // Beer
+    "Olut on juomista parhain.",
+    "Olut tekee hyvää vatsalle.",
+    "Olut on kuin nestemäistä leipää.",
+    "Hyvä olut, hyvä mieli.",
+    "Olut ei ole vain juoma, se on elämäntapa.",
+    "Yksi olut päivässä pitää huolen siitä, että päiväsi on hyvä.",
+    "Olut yhdistää ihmisiä.",
+    "Olut on kuin viisas ystävä, se tietää aina parhaat tarinat.",
+    "Olut on kuin musiikki, se saa ihmisen tuntemaan tunteita.",
+    "Hyvän oluen arvostus kasvaa vuosien mukana.",
+
+    // Nature
+    "Luonto kutsuu seikkailuun.",
+    "Luonto on paras paikka löytää rauhaa.",
+    "Jokainen puu on tarina.",
+    "Luonto on suuri opettaja.",
+    "Luonto tarjoaa parhaat näkymät.",
+    "Luonto on parasta lääkettä.",
+    "Luonto on kauneuden lähde.",
+    "Luonto on kuin taikamaailma, täynnä ihmeitä.",
+    "Luonto antaa meille enemmän kuin mitä voimme koskaan antaa sille takaisin.",
+    "Luonnossa kaikki on yhteydessä toisiinsa.",
+
+    // Food
+    "Rakkaus kulkee vatsan kautta.",
+    "Ruoka yhdistää ihmisiä.",
+    "Hyvä ruoka, parempi mieli.",
+    "Ruoka on juhlaa jokaiselle aistille.",
+    "Jokainen ruokalaji on tarina.",
+    "Rakkaus on salainen ainesosa jokaisessa hyvässä ruoassa.",
+    "Ruoka ei ole vain ravintoa, se on kulttuuria.",
+    "Ruoka on kuin taikajuoma, se saa ihmiset hymyilemään.",
+    "Ruoka on yhtä tärkeää kuin ilma, vesi ja rakkaus.",
+    "Paras ruoka on tehty rakkaudella."
+    ];
+
+    // Function to get a random phrase from the array
+    function getRandomPhrase() {
+      const randomIndex = Math.floor(Math.random() * phrases.length);
+      return phrases[randomIndex];
+    }
+
+    // Function to display the random phrase in the footer
+    function displayRandomPhrase() {
+      const footer = document.getElementById('footer');
+      footer.textContent = getRandomPhrase();
+    }
+
+    // Call the displayRandomPhrase function when the page loads
+    window.onload = displayRandomPhrase;
   </script>
- 
-<!--tän lähde on osoitteesta: https://stackoverflow.com/questions/26879997/changing-text-depending-on-current-time
-  document.getElementById("footer").innerHTML= new Date().getHours() >= 12 ? 'Hyvää iltapäivää' : 'Hyvää huomenta';-->
  
   </footer>
 </body>
