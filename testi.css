@@ -60,7 +60,7 @@ body {
 #helsinki {
   /*koko html-dokumentista näkee sivun levelyden, maksimileveyden pystyy kattomaan siitä ja miinustamaan navipalkin leveyden jollon saa sivun leveyteen mahtuvan kuvan. Esim. 1477-300=1177*/
   /* width: 100%; */
-  max-width: 1305px;
+  max-width: 100%;
   margin: 0px 0px 0px 0px;
   text-align: center;
 }
